@@ -60,3 +60,65 @@ $ tsc ./src/index.ts --watch --strict true --target ES6 --lib ES2015,DOM --modul
 ```
 $ tsc --watch
 ```
+
+## 어떻게 실행 시킬까?
+**1. TypeScript를 local 환경에서 빠르게 테스팅 해보고 싶다면 ```Parcel``` 번들러가 좋은 선택**
+```bash
+$ mkdir typescript-test
+$ cd typescript-test
+$ npm init -y
+$ npm install -D typescript parcel-bundler
+```
+```tsconfig.json``` 파일을 생성하고 원하는 옵션을 추가합니다.
+```json
+{
+  "compilerOptions": {
+    "strict": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
+```
+```index.html``` 파일 추가하기.
+```html 
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>TypeScript Test</title>
+</head>
+<body>
+  <script src="main.ts"></script>
+</body>
+</html>
+```
+드디어!! ```Parcel``` 번들러로 컴파일 한다.
+```bash
+$ npx parcel index.html
+```
+*** 
+
+**2. Nodejs 환경에서 테스트 하고 싶다면, Ts node를 활용하자.**
+```bash
+$ mkdir typescript-test
+$ cd typescript-test
+$ npm init -y
+$ npm install -D typescript @types/node ts-node
+```
+tsconfig.json 수정
+```json
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "CommonJS"
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
+```
+```bash
+$ tsc main.ts
+$ npx ts-node main.js
+```
