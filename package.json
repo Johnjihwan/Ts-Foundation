@@ -1,0 +1,24 @@
+{
+  "name": "Ts-Foundation",
+  "version": "1.0.0",
+  "description": "1. C#, Java 같은 정제된 언어들에서 사용하는 강한 타입 시스템을 갖췄다. 2. 가동성과 코드 품질등을 제공할 수 있고 런타임이 아닌 컴파일 환경에서 에러가 발생해 치명적 오류를 쉽게 잡아낸다. 3. 동적 프로그래밍 언어로, 자바스크립트의 문법을 가질 수 있다. 4. 약한 타입의 언어라서 비교적 유연하게 개발할 수 있는 환경을 제공한다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johnjihwan/Ts-Foundation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Johnjihwan/Ts-Foundation/issues"
+  },
+  "homepage": "https://github.com/Johnjihwan/Ts-Foundation#readme",
+  "devDependencies": {
+    "parcel-bundler": "1.12.4",
+    "typescript": "4.1.3"
+  }
+}
