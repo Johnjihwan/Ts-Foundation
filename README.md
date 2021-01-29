@@ -1,4 +1,4 @@
-# 기초부터 탄탄히 잡는 TypeScript
+# <img src="https://img.icons8.com/color/48/000000/typescript.png"/> 기초부터 탄탄히 잡는 TypeScript
 ## 🤷🏻‍♀️ 왜 TypeScript?
 1. C#, Java 같은 정제된 언어들에서 사용하는 강한 타입 시스템을 갖췄다.
 2. 가동성과 코드 품질등을 제공할 수 있고 런타임이 아닌 컴파일 환경에서 에러가 발생해 치명적 오류를 쉽게 잡아낸다.
